@@ -12,5 +12,5 @@ klass_b = int(input('Введите количество учеников: '))
 klass_c = int(input('Введите количество учеников: '))
 
 print( klass_a, klass_b, klass_c)
-res = round((klass_a + klass_b + klass_c) / 2)
+res = (klass_a + klass_b + klass_c + 1) // 2
 print(res)
