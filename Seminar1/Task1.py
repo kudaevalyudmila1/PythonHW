@@ -11,5 +11,5 @@
 
 n = 700
 m = 750
-res = (m + n - 1)//n
+res = (m + n - 1)// n
 print(res)
