@@ -8,7 +8,10 @@ num1 = int(input('Введите сумму натуральных чисел: '
 num2 = int(input('Введите произведение натуральных чисел: '))
 if num1 < 2001 and num2 < 1000001:
     x = int((num1 + math.sqrt( num1**2 - 4 * num2)) / 2)
-    y = int (num2 / x)
+    y = int(num2 / x)
+    if x * y == num2:
+        print(f' {num1} , {num2} -> {x} , {y}', end=' ')
+    else:
+        print('Введены неверные числа')
 else:
     print('Введены неверные числа')
-print(f' {num1} , {num2} -> {x} , {y}', end=' ')
