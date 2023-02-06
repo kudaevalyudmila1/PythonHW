@@ -3,7 +3,7 @@
 # Input: [1, 1, 2, 0, -1, 3, 4, 4]
 # Output: 6
 
-list = [1, 1, 2, 0, -1, 3, 4, 4]
-a = set(list)
+list_1 = [1, 1, 2, 0, -1, 3, 4, 4]
+a = set(list_1)
 print(a)
 print(len(a))
