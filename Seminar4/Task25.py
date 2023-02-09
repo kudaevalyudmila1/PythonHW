@@ -28,5 +28,21 @@ for i in str_list:
     else:
         temp[i] = 0
         res_str +=f' {i} ' 
-# print(temp)
 print(res_str)
+
+# преподаватель
+# input_str = 'a a a b c a a d c d d'
+
+# input_lst = input_str.split()
+# print(input_lst)
+# res = []
+
+# for i in range(len(input_lst)):
+#    x = input_lst[:i]
+#    if x.count(input_lst[i]) == 0:
+#       res.append(input_lst[i])
+#    else:
+#       res.append(f'{input_lst[i]}_{x.count(input_lst[i])}')
+# print(res)
+# out_str = ' '.join(res)
+# print(out_str)
