@@ -10,7 +10,6 @@
 # Output: 13
 
 input_str = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure So if she sells sea shells on the sea shore I'm sure that the shells are sea shore shells"
-
 str_list = input_str.lower().split()
 res_str = set(str_list)
 print(res_str)
