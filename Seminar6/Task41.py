@@ -6,3 +6,23 @@
 # вводится число N — количество элементов в массиве
 # Далее записаны N чисел — элементы массива. Массив
 # состоит из целых чисел.
+
+
+def numbers(x):
+    list_1 = []
+    for _ in range(x):
+        list_1.append(int(input('Введите элемент массива: ')))
+    return list_1
+
+
+def search_list(list_1):
+    count = 0
+    for i in range(0, len(list_1) - 1):
+        if list_1[i - 1] < list_1[i] < list_1[i + 1]:
+            count += 1
+    return count
+
+n = int(input('Введите количество элементов  массива:'))
+list_1 = numbers(n)
+print(list_1)
+print(search_list(list_1))
