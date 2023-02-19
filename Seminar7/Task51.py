@@ -12,7 +12,7 @@ def same_by(characteristic, objects):
     result = []
     for obj in objects:
         result.append(characteristic(obj))
-    return not all(result)
+        return not all(result)
 
 
 values = [0, 2, 10, 6] 
