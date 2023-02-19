@@ -6,3 +6,17 @@
 # должна возвращать True. Аргумент characteristic - это
 # функция, которая принимает объект и вычисляет его
 # характеристику.
+
+
+def same_by(characteristic, objects):
+    result = []
+    for obj in objects:
+        result.append(characteristic(obj))
+    return not all(result)
+
+
+values = [0, 2, 10, 6] 
+if same_by(lambda x: x % 2, values):
+    print ('same')
+else:
+    print('different')
