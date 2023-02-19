@@ -8,3 +8,18 @@
 # в порядке
 # Ввод: Вывод:
 # пара-ра-рам рам-пам-папам па-ра-па-дам Парам пам-пам
+
+def words(txt):
+    sum = 0
+    for i in txt:
+        if i in 'аеёиоуыэюя': 
+            sum += 1
+    return sum
+
+
+text = input('Введите текст:')
+text1 = text.split(' ')
+if all([words(i) == words(text1[0]) for i in text1]):
+    print ('Парам пам-пам')
+else:
+    print ('Пам парам')
